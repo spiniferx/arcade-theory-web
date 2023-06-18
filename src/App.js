@@ -1,22 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import MouseParticles from 'react-mouse-particles'
 
 function App() {
   return (
     <div className="App">
+      <MouseParticles g={0} color="#FD1C03" cull="col,image-wrapper" radius="12" num="3"/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       <span className='App-logo'>🕹</span>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to <span style={{color: 'red'}}>Arcade</span> Theory
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
