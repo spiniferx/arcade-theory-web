@@ -1,4 +1,5 @@
 import React from "react";
+import MouseParticles from 'react-mouse-particles';
 
 import {
   AboutUs,
@@ -16,13 +17,15 @@ import "./App.css";
 
 const App = () => (
   <div>
+    <MouseParticles g={0} color="#CFFF00" cull="col,image-wrapper" radius="28" num="5"/>
     <Navbar />
     <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
     <Intro />
-    <Laurels />
+    <AboutUs />
+    {/* <SpecialMenu /> */}
+    {/* <Chef /> */}
+    
+    {/* <Laurels /> */}
     <Gallery />
     <FindUs />
     <Footer />
